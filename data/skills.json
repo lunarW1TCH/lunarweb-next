@@ -1,0 +1,127 @@
+[
+  {
+    "title": "JavaScript",
+    "category": "Language",
+    "description": ""
+  },
+  {
+    "title": "TypeScript",
+    "category": "Language",
+    "description": ""
+  },
+  {
+    "title": "React",
+    "category": "Library/Framework",
+    "description": "Redux Toolkit, Styled Components"
+  },
+  {
+    "title": "Next.js",
+    "category": "Library/Framework",
+    "description": "React framework for production"
+  },
+  {
+    "title": "Vue",
+    "category": "Library/Framework",
+    "description": "Composition API, Options API, Vuex/Pinia"
+  },
+  {
+    "title": "React Native",
+    "category": "Library/Framework",
+    "description": ""
+  },
+  {
+    "title": "Visual Studio Code",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Node JS",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Express JS",
+    "category": "Library/Framework",
+    "description": ""
+  },
+  {
+    "title": "MongoDB",
+    "category": "Tool/Other",
+    "description": "Mostly used it with Node JS and Mongoose"
+  },
+  {
+    "title": "Mongoose",
+    "category": "Library/Framework",
+    "description": ""
+  },
+  {
+    "title": "Python",
+    "category": "Language",
+    "description": ""
+  },
+  {
+    "title": "C++",
+    "category": "Language",
+    "description": "Arduino C++ subset"
+  },
+  {
+    "title": "Flask",
+    "category": "Library/Framework",
+    "description": ""
+  },
+  {
+    "title": "Arduino IDE",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Arduino",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Raspberry Pi",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Linux",
+    "category": "Tool/Other",
+    "description": "I use Manjaro as my main operating system."
+  },
+  {
+    "title": "Visual Basic for Applications",
+    "category": "Language",
+    "description": ""
+  },
+  {
+    "title": "MS OFFICE",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Postman",
+    "category": "Tool/Other",
+    "description": "For testing API development."
+  },
+  {
+    "title": "Docker",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "Unreal Engine 5",
+    "category": "Tool/Other",
+    "description": ""
+  },
+  {
+    "title": "HTML",
+    "category": "Language",
+    "description": ""
+  },
+  {
+    "title": "CSS/SCSS",
+    "category": "Language",
+    "description": ""
+  }
+]
