@@ -64,7 +64,7 @@ const ProjectPage = async (props: ProjectPageProps) => {
 
 export default ProjectPage;
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export const generateStaticParams = async () => {
   const projectsArray = projects as ProjectItemProps[];
