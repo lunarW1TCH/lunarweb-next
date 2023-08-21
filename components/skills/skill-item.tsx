@@ -1,7 +1,7 @@
-/** @jsxImportSource @emotion/react */
-import { FaStar, FaRegStar, FaCircle } from 'react-icons/fa';
+import { FaCircle } from 'react-icons/fa';
+import { css } from '@/styled-system/css';
 
-import styles from '@/styles/components/skills/skill-item';
+import styles from './skill-item-styles';
 
 export interface SkillItemProps {
   title: string;
@@ -11,31 +11,38 @@ export interface SkillItemProps {
 
 const SkillItem = (props: SkillItemProps) => {
   const { title, description, category } = props;
+  const classes = styles();
 
-  let circleColor = '#008080';
+  let iconColor;
 
   switch (category) {
     case 'Language':
-      circleColor = '#008080';
+      iconColor = css({
+        color: 'categories.language',
+      });
       break;
     case 'Library/Framework':
-      circleColor = '#ff85a2';
+      iconColor = css({
+        color: 'categories.library',
+      });
       break;
     case 'Tool/Other':
-      circleColor = '#aaaaaa';
+      iconColor = css({
+        color: 'categories.tool',
+      });
       break;
   }
 
   return (
-    <div css={styles.skillContainer}>
-      <div css={styles.dataContainer}>
-        <span css={styles.skillTitle}>{title}</span>
-        <span>
-          <FaCircle css={styles.icon} color={circleColor} size='18' />
+    <div className={classes.skillContainer}>
+      <div className={classes.dataContainer}>
+        <span className={classes.skillTitle}>{title}</span>
+        <span className={classes.iconContainer}>
+          <FaCircle className={`${classes.icon} ${iconColor}`} />
           {category}
         </span>
       </div>
-      <span css={styles.skillDescription}>{description}</span>
+      <span className={classes.skillDescription}>{description}</span>
     </div>
   );
 };

@@ -1,47 +1,39 @@
-/** @jsxImportSource @emotion/react */
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { THEME } from '@/styles/global-styles';
-import styles from '@/styles/components/home/introduction';
+import styles from './introduction-styles';
 
 const Introduction = () => {
+  const classes = styles();
+
   return (
-    <div css={styles.outerContainer}>
-      <h1 css={styles.header}>
-        Hello, I am Adrian Żegnałek <br /> a self-taught software developer
+    <div className={classes.outerContainer}>
+      <h1 className={classes.header}>
+        Hello, I am Adrian Żegnałek <br /> a software developer from Poznań
       </h1>
-      <div css={styles.innerContainer}>
-        <p css={styles.paragraph}>
+      <div className={classes.innerContainer}>
+        <p className={classes.paragraph}>
           You can see some of my projects <a href='projects'>here</a> and on my
           GitHub account. Head on over to the <a href='skills'>skills</a> page
           to see the list of skills I have and technologies I worked with.
         </p>
-        <div css={styles.links}>
+        <div className={classes.links}>
           <span>
-            <a css={styles.link} href='https://github.com/lunarW1TCH'>
-              <FaGithub
-                color={THEME.primary700}
-                css={styles.icon}
-                fontSize='18'
-              />
+            <a className={classes.link} href='https://github.com/lunarW1TCH'>
+              <FaGithub className={classes.icon} fontSize='18' />
               GitHub
             </a>
           </span>
           <span>
             <a
-              css={styles.link}
+              className={classes.link}
               href='https://www.linkedin.com/in/adrian-zegnalek/'
             >
-              <FaLinkedin
-                color={THEME.primary700}
-                css={styles.icon}
-                fontSize='18'
-              />
+              <FaLinkedin className={classes.icon} fontSize='18' />
               LinkedIn
             </a>
           </span>
         </div>
       </div>
-      <p css={styles.catCredit}>The cat name&apos;s Freja</p>
+      <p className={classes.catCredit}>The cat name&apos;s Freja</p>
     </div>
   );
 };

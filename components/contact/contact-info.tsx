@@ -1,18 +1,21 @@
-/** @jsxImportSource @emotion/react */
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
-import { THEME } from '@/styles/global-styles';
-import styles from '@/styles/components/contact/contact-info';
+import styles from './contact-info-styles';
 
 const ContactInfo = () => {
+  const classes = styles();
+
   return (
-    <div css={styles.infoContainer}>
-      <a css={styles.link} href='https://github.com/lunarW1TCH'>
-        <FaGithub color={THEME.primary700} css={styles.icon} fontSize='18' />
+    <div className={classes.infoContainer}>
+      <a className={classes.link} href='https://github.com/lunarW1TCH'>
+        <FaGithub className={classes.icon} fontSize='18' />
         GitHub
       </a>
-      <a css={styles.link} href='https://www.linkedin.com/in/adrian-zegnalek/'>
-        <FaLinkedin color={THEME.primary700} css={styles.icon} fontSize='18' />
+      <a
+        className={classes.link}
+        href='https://www.linkedin.com/in/adrian-zegnalek/'
+      >
+        <FaLinkedin className={classes.icon} fontSize='18' />
         LinkedIn
       </a>
     </div>

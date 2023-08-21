@@ -1,10 +1,8 @@
-/** @jsxImportSource @emotion/react */
 import Image from 'next/image';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import Link from 'next/link';
 
-import { THEME } from '@/styles/global-styles';
-import styles from '@/styles/components/projects/project-item';
+import styles from './project-item-styles';
 
 interface ProjectLink {
   name: string;
@@ -23,32 +21,30 @@ export interface ProjectItemProps {
 
 const ProjectItem = (props: ProjectItemProps) => {
   const { title, shortDescription, image, technologies, links, id } = props;
+  const classes = styles();
 
   return (
-    <div css={styles.projectContainer}>
+    <div className={classes.projectContainer}>
       <div>
-        <Link css={{ textDecoration: 'none' }} href={`/projects/${id}`}>
-          <h2 css={styles.projectTitle}>{title}</h2>
+        <Link href={`/projects/${id}`}>
+          <h2 className={classes.projectTitle}>{title}</h2>
         </Link>
-        <div css={styles.imgContainer}>
+        <div className={classes.imgContainer}>
           <Link href={`/projects/${id}`}>
-            <FaArrowUpRightFromSquare
-              color={THEME.primary900}
-              css={styles.icon}
-            />
+            <FaArrowUpRightFromSquare className={classes.icon} />
             <Image
               width={500}
               height={500}
               alt={title}
-              css={styles.projectImg}
               src={image}
+              className={classes.projectImg}
             />
           </Link>
         </div>
       </div>
-      <div css={styles.infoContainer}>
-        <span css={styles.projectDescription}>{shortDescription}</span>
-        <ul css={styles.projectTechnologies}>
+      <div className={classes.infoContainer}>
+        <span className={classes.projectDescription}>{shortDescription}</span>
+        <ul className={classes.projectTechnologies}>
           {technologies.map(tech => (
             <li key={tech}>{tech}</li>
           ))}

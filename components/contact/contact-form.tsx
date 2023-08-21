@@ -1,12 +1,15 @@
-/** @jsxImportSource @emotion/react */
+'use client';
+
 import { useState } from 'react';
 import validator from 'validator';
 import axios from 'axios';
 import { FaSpinner } from 'react-icons/fa';
 
-import styles from '@/styles/components/contact/contact-form';
+import styles from './contact-form-styles';
 
 const ContactForm = () => {
+  const classes = styles();
+
   const [formData, setFormData] = useState({
     email: '',
     title: '',
@@ -94,10 +97,12 @@ const ContactForm = () => {
   return (
     <>
       {!sent && (
-        <form onSubmit={onSubmitHandler} css={styles.formContainer}>
+        <form onSubmit={onSubmitHandler} className={classes.formContainer}>
           <label htmlFor='email'>E-mail</label>
           <input
-            css={[styles.formInput, hasError.email && styles.hasError]}
+            className={`
+              ${classes.formInput} ${hasError.email && classes.hasError}
+            `}
             type='email'
             id='email'
             name='email'
@@ -108,7 +113,9 @@ const ContactForm = () => {
           />
           <label htmlFor='title'>Title</label>
           <input
-            css={[styles.formInput, hasError.title && styles.hasError]}
+            className={`
+              ${classes.formInput} ${hasError.title && classes.hasError}
+            `}
             type='title'
             id='title'
             name='title'
@@ -119,7 +126,9 @@ const ContactForm = () => {
           />
           <label htmlFor='message'>Your message</label>
           <textarea
-            css={[styles.formInput, hasError.message && styles.hasError]}
+            className={`
+              ${classes.formInput} ${hasError.message && classes.hasError}
+            `}
             id='message'
             name='message'
             rows={10}
@@ -128,18 +137,22 @@ const ContactForm = () => {
             value={formData.message}
             required
           />
-          {isLoading && <FaSpinner css={styles.spinner} />}
-          <button css={styles.submitButton} type='submit'>
+          {isLoading && <FaSpinner className={classes.spinner} />}
+          <button className={classes.submitButton} type='submit'>
             Submit!
           </button>
           {sendingError && (
-            <span css={styles.errorText}>
+            <span className={classes.errorText}>
               Something went wrong, please try again later!
             </span>
           )}
         </form>
       )}
-      {sent && <h1>Thank you! I&apos;ll get in touch with you shortly.</h1>}
+      {sent && (
+        <h1 className={classes.thankYouText}>
+          Thank you! I&apos;ll get in touch with you shortly.
+        </h1>
+      )}
     </>
   );
 };

@@ -1,16 +1,49 @@
-/** @jsxImportSource @emotion/react */
-import Link from 'next/link';
+'use client';
 
-import styles from '@/styles/components/ui/navigation';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+import styles from './navigation-styles';
 
 const Navigation = () => {
+  const classes = styles();
+  const pathname = usePathname();
+
   return (
-    <nav css={styles.navContainer}>
-      <ul css={styles.navList}>
-        <Link href='/'>Home</Link>
-        <Link href='/projects'>Projects</Link>
-        <Link href='/skills'>Skills</Link>
-        <Link href='/contact'>Contact</Link>
+    <nav className={classes.navContainer}>
+      <ul className={classes.navList}>
+        <Link
+          className={`${classes.link} ${
+            pathname === '/' ? classes.active : ''
+          }`}
+          href='/'
+        >
+          Home
+        </Link>
+        <Link
+          className={`${classes.link} ${
+            pathname === '/projects' ? classes.active : ''
+          }`}
+          href='/projects'
+        >
+          Projects
+        </Link>
+        <Link
+          className={`${classes.link} ${
+            pathname === '/skills' ? classes.active : ''
+          }`}
+          href='/skills'
+        >
+          Skills
+        </Link>
+        <Link
+          className={`${classes.link} ${
+            pathname === '/contact' ? classes.active : ''
+          }`}
+          href='/contact'
+        >
+          Contact
+        </Link>
       </ul>
     </nav>
   );

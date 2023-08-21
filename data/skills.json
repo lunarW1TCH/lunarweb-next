@@ -17,7 +17,7 @@
   {
     "title": "Next.js",
     "category": "Library/Framework",
-    "description": "React framework for production"
+    "description": "Pages Router and App Router"
   },
   {
     "title": "Vue",
@@ -47,7 +47,7 @@
   {
     "title": "MongoDB",
     "category": "Tool/Other",
-    "description": "Mostly used it with Node JS and Mongoose"
+    "description": ""
   },
   {
     "title": "Mongoose",
@@ -95,14 +95,14 @@
     "description": ""
   },
   {
-    "title": "MS OFFICE",
+    "title": "MS Office",
     "category": "Tool/Other",
     "description": ""
   },
   {
     "title": "Postman",
     "category": "Tool/Other",
-    "description": "For testing API development."
+    "description": "For testing during API development."
   },
   {
     "title": "Docker",
@@ -120,8 +120,8 @@
     "description": ""
   },
   {
-    "title": "CSS/SCSS",
+    "title": "CSS",
     "category": "Language",
-    "description": ""
+    "description": "Including CSS preprocessors like SCSS and CSS-in-JS using Emotion or Panda-CSS"
   }
 ]

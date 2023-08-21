@@ -7,7 +7,7 @@
       "TypeScript",
       "React",
       "Next.js",
-      "Emotion - CSS-in-JS library",
+      "Panda CSS - CSS-in-JS library",
       "NodeJS"
     ],
     "image": "/img/gala.jpg",
@@ -27,7 +27,8 @@
     ],
     "description": [
       "I created the first version of this website with React and Express.js. However I didn't like having to host such a small and insignificant backend just to send myself some emails through contact form.",
-      "That's why I have rewritten it using Next.js. Now I am hosting it in one place and can access backend code through Next's amazing feature: API routes."
+      "That's why I have rewritten it using Next.js. Now I am hosting it in one place and can access backend code through Next's amazing feature: API routes.",
+      "Another partial rewrite, this time I switched from Next's /pages router to /app router and from Emotion to Panda-CSS."
     ]
   },
   {
