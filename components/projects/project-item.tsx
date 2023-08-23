@@ -31,7 +31,7 @@ const ProjectItem = async (props: ProjectItemProps) => {
   return (
     <div className={classes.projectContainer}>
       <div>
-        <Link href={`/projects/${id}`}>
+        <Link href={`${lng}/projects/${id}`}>
           <h2 className={classes.projectTitle}>{title}</h2>
         </Link>
         <div className={classes.imgContainer}>
