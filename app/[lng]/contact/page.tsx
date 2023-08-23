@@ -7,7 +7,9 @@ import { fallbackLng, languages } from '@/app/i18n/settings';
 const ContactPage = (props: PageProps) => {
   const { params } = props;
   let lng = params.lng;
-  if (languages.indexOf(lng) < 0) lng = fallbackLng;
+  if (languages.indexOf(lng) < 0) {
+    lng = fallbackLng;
+  }
 
   const classes = styles();
 
