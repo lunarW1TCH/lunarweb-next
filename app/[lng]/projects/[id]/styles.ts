@@ -30,6 +30,7 @@ const styles = sva({
       borderRadius: 'l',
       padding: 'l',
       width: '80%',
+      boxShadow: 'solid',
       '& h1': {
         fontSize: 'xl',
       },
@@ -81,6 +82,7 @@ const styles = sva({
       borderRadius: 'l',
       width: '80%',
       textAlign: 'center',
+      boxShadow: 'solid',
     },
     detailsParagraph: {
       marginTop: 's',

@@ -1,15 +1,18 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Image from 'next/image';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import Link from 'next/link';
 
 import styles from './project-item-styles';
+import Props from '@/interfaces/props';
+import { useTranslation } from '@/app/i18n';
 
 interface ProjectLink {
   name: string;
   link: string;
 }
 
-export interface ProjectItemProps {
+export interface ProjectItemProps extends Props {
   id: string;
   title: string;
   shortDescription: string;
@@ -19,8 +22,10 @@ export interface ProjectItemProps {
   links: ProjectLink[];
 }
 
-const ProjectItem = (props: ProjectItemProps) => {
-  const { title, shortDescription, image, technologies, links, id } = props;
+const ProjectItem = async (props: ProjectItemProps) => {
+  const { title, shortDescription, image, technologies, links, id, lng } =
+    props;
+  const { t } = await useTranslation(lng, 'projects');
   const classes = styles();
 
   return (
@@ -43,7 +48,9 @@ const ProjectItem = (props: ProjectItemProps) => {
         </div>
       </div>
       <div className={classes.infoContainer}>
-        <span className={classes.projectDescription}>{shortDescription}</span>
+        <span className={classes.projectDescription}>
+          {t(shortDescription)}
+        </span>
         <ul className={classes.projectTechnologies}>
           {technologies.map(tech => (
             <li key={tech}>{tech}</li>

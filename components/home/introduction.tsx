@@ -1,20 +1,26 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import styles from './introduction-styles';
+import { useTranslation } from '@/app/i18n/';
+import Props from '@/interfaces/props';
 
-const Introduction = () => {
+const Introduction = async (props: Props) => {
+  const { lng } = props;
+  const { t } = await useTranslation(lng, 'home', {
+    keyPrefix: 'introduction',
+  });
   const classes = styles();
 
   return (
     <div className={classes.outerContainer}>
       <h1 className={classes.header}>
-        Hello, I am Adrian Żegnałek <br /> a software developer from Poznań
+        {t('header-pt1')}
+        <br />
+        {t('header-pt2')}
       </h1>
       <div className={classes.innerContainer}>
-        <p className={classes.paragraph}>
-          You can see some of my projects <a href='projects'>here</a> and on my
-          GitHub account. Head on over to the <a href='skills'>skills</a> page
-          to see the list of skills I have and technologies I worked with.
-        </p>
+        <p className={classes.paragraph}>{t('paragraph')}</p>
         <div className={classes.links}>
           <span>
             <a className={classes.link} href='https://github.com/lunarW1TCH'>
@@ -33,7 +39,7 @@ const Introduction = () => {
           </span>
         </div>
       </div>
-      <p className={classes.catCredit}>The cat name&apos;s Freja</p>
+      <p className={classes.catCredit}> {t('cat-credit')}</p>
     </div>
   );
 };

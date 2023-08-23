@@ -4,8 +4,14 @@ import ProjectItem, {
 import projects from '@/data/projects.json';
 
 import styles from './styles';
+import PageProps from '@/interfaces/page-props';
+import { fallbackLng, languages } from '@/app/i18n/settings';
 
-const ProjectsPage = async () => {
+const ProjectsPage = async (props: PageProps) => {
+  const { params } = props;
+  let lng = params.lng;
+  if (languages.indexOf(lng) < 0) lng = fallbackLng;
+
   const projectsArray = projects as ProjectItemProps[];
   const classes = styles();
 
@@ -13,7 +19,7 @@ const ProjectsPage = async () => {
     <div>
       <div className={classes.projectsContainer}>
         {projectsArray.map(project => (
-          <ProjectItem key={project.title} {...project} />
+          <ProjectItem key={project.title} {...project} lng={lng} />
         ))}
       </div>
     </div>

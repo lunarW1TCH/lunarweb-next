@@ -24,11 +24,23 @@ const styles = sva({
       justifyContent: 'center',
       alignItems: 'center',
       color: 'primary.900',
+      padding: 'xs',
+      borderRadius: 's',
+      _hover: {
+        color: 'white',
+        backgroundColor: 'primary.500',
+        '& svg': {
+          color: 'white',
+        },
+      },
+      '& svg': {
+        color: 'primary.700',
+      },
+      transition: 'all 0.1s ease-in-out',
     },
     icon: {
       marginRight: 's',
       verticalAlign: 'top',
-      color: 'primary.700',
     },
   },
 });

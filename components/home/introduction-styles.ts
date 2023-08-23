@@ -68,13 +68,26 @@ const styles = sva({
       textDecoration: 'none',
       verticalAlign: 'bottom',
       color: 'primary.900',
+      padding: 'xs',
+      borderRadius: 's',
+      _hover: {
+        color: 'white',
+        backgroundColor: 'primary.500',
+        '& svg': {
+          color: 'white',
+        },
+      },
+      '& svg': {
+        color: 'primary.700',
+      },
+      transition: 'all 0.1s ease-in-out',
     },
     icon: {
       marginRight: 's',
-      color: 'primary.900',
     },
     catCredit: {
       marginTop: 'xxxl',
+      marginBottom: 'm',
       fontStyle: 'italic',
     },
   },

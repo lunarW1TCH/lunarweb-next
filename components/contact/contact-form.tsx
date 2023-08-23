@@ -6,9 +6,13 @@ import axios from 'axios';
 import { FaSpinner } from 'react-icons/fa';
 
 import styles from './contact-form-styles';
+import Props from '@/interfaces/props';
+import { useTranslation } from '@/app/i18n/client';
 
-const ContactForm = () => {
+const ContactForm = (props: Props) => {
   const classes = styles();
+  const { lng } = props;
+  const { t } = useTranslation(lng, 'contact');
 
   const [formData, setFormData] = useState({
     email: '',
@@ -111,7 +115,7 @@ const ContactForm = () => {
             value={formData.email}
             required
           />
-          <label htmlFor='title'>Title</label>
+          <label htmlFor='title'>{t('title')}</label>
           <input
             className={`
               ${classes.formInput} ${hasError.title && classes.hasError}
@@ -124,7 +128,7 @@ const ContactForm = () => {
             value={formData.title}
             required
           />
-          <label htmlFor='message'>Your message</label>
+          <label htmlFor='message'>{t('message')}</label>
           <textarea
             className={`
               ${classes.formInput} ${hasError.message && classes.hasError}
@@ -139,20 +143,14 @@ const ContactForm = () => {
           />
           {isLoading && <FaSpinner className={classes.spinner} />}
           <button className={classes.submitButton} type='submit'>
-            Submit!
+            {t('submit')}
           </button>
           {sendingError && (
-            <span className={classes.errorText}>
-              Something went wrong, please try again later!
-            </span>
+            <span className={classes.errorText}>{t('error')}</span>
           )}
         </form>
       )}
-      {sent && (
-        <h1 className={classes.thankYouText}>
-          Thank you! I&apos;ll get in touch with you shortly.
-        </h1>
-      )}
+      {sent && <h1 className={classes.thankYouText}>{t('thank-you')}</h1>}
     </>
   );
 };

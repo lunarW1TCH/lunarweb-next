@@ -18,6 +18,9 @@ const styles = sva({
       justifyContent: 'space-around',
     },
     link: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       textDecoration: 'none',
       textAlign: 'center',
       flexGrow: 1,

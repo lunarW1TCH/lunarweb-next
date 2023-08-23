@@ -5,16 +5,25 @@ import { ProjectItemProps } from '@/components/projects/project-item';
 import projects from '@/data/projects.json';
 
 import styles from './styles';
+import { fallbackLng, languages } from '@/app/i18n/settings';
+import { useTranslation } from '@/app/i18n';
 
 interface ProjectPageProps {
   params: {
     id: string;
+    lng: string;
   };
 }
 
 const ProjectPage = async (props: ProjectPageProps) => {
+  const { params } = props;
+  let lng = params.lng;
+  if (languages.indexOf(lng) < 0) lng = fallbackLng;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = await useTranslation(lng, 'projects');
+
   const classes = styles();
-  const { id } = props.params;
+  const { id } = params;
 
   const projectsArray = projects as ProjectItemProps[];
   const project = projectsArray.find(
@@ -32,7 +41,7 @@ const ProjectPage = async (props: ProjectPageProps) => {
         </div>
         <div className={classes.projectHeader}>
           <h1>{title}</h1>
-          <p>{shortDescription}</p>
+          <p>{t(shortDescription)}</p>
           <p className={classes.headerTechnologies}>
             {technologies.toString().replaceAll(',', ', ')}
           </p>
@@ -42,7 +51,7 @@ const ProjectPage = async (props: ProjectPageProps) => {
         {description.length > 0 &&
           description.map(item => (
             <p className={classes.detailsParagraph} key={item}>
-              {item}
+              {t(item)}
             </p>
           ))}
         {links.length > 0 && (
@@ -51,7 +60,7 @@ const ProjectPage = async (props: ProjectPageProps) => {
             <ul className={classes.list}>
               {links.map(link => (
                 <li className={classes.link} key={link.name}>
-                  <Link href={link.link}>{link.name}</Link>
+                  <Link href={link.link}>{t(link.name)}</Link>
                 </li>
               ))}
             </ul>

@@ -1,8 +1,8 @@
 [
   {
     "id": "lunarweb",
-    "title": "This website",
-    "shortDescription": "You're here, portfolio website created with Next.js. (That's Galadriela)",
+    "title": "Lunarweb",
+    "shortDescription": "lunarweb.short-desc",
     "technologies": [
       "TypeScript",
       "React",
@@ -13,28 +13,24 @@
     "image": "/img/gala.jpg",
     "links": [
       {
-        "name": "Github project",
+        "name": "lunarweb.link-1",
         "link": "https://github.com/lunarW1TCH/lunarweb-next"
       },
       {
-        "name": "Old Github front project",
+        "name": "lunarweb.link-2",
         "link": "https://github.com/lunarW1TCH/lunarweb-front"
       },
       {
-        "name": "Old Github backend project",
+        "name": "lunarweb.link-3",
         "link": "https://github.com/lunarW1TCH/lunarweb-node"
       }
     ],
-    "description": [
-      "I created the first version of this website with React and Express.js. However I didn't like having to host such a small and insignificant backend just to send myself some emails through contact form.",
-      "That's why I have rewritten it using Next.js. Now I am hosting it in one place and can access backend code through Next's amazing feature: API routes.",
-      "Another partial rewrite, this time I switched from Next's /pages router to /app router and from Emotion to Panda-CSS."
-    ]
+    "description": ["lunarweb.desc-1", "lunarweb.desc-2", "lunarweb.desc-3"]
   },
   {
     "id": "lunarbingo",
     "title": "WIP: Lunar Bingo",
-    "shortDescription": "A fullstack TypeScript app! Users can create bingos, share them with others and play together! App is almost complete, I just need to work a little bit more on styling before publishing it.",
+    "shortDescription": "lunarbingo.short-desc",
     "technologies": [
       "TypeScript",
       "Vue",
@@ -47,23 +43,20 @@
     "image": "/img/bingo.png",
     "links": [
       {
-        "name": "Github front project",
+        "name": "lunarbingo.link-1",
         "link": "https://github.com/lunarW1TCH/bingo-vue"
       },
       {
-        "name": "Github backend project",
+        "name": "lunarbingo.link-2",
         "link": "https://github.com/lunarW1TCH/bingo-node"
       }
     ],
-    "description": [
-      "My friend Oanh is currently helping me with styling the website. I'll publish the app once we finish.",
-      "I had lots of fun learning Vue and creating this website using it. It was nice to take a little breather from constant working with React."
-    ]
+    "description": ["lunarbingo.desc-1", "lunarbingo.desc-2"]
   },
   {
     "id": "lunarify-react",
     "title": "Lunarify - React",
-    "shortDescription": "This is a React app which utilizes Spotify API to show user's top listened-to artists and albums.",
+    "shortDescription": "lunarify-react.short-desc",
     "technologies": [
       "TypeScript",
       "React",
@@ -76,7 +69,7 @@
     "image": "/img/lunarify-react.png",
     "links": [
       {
-        "name": "Github",
+        "name": "lunarify-react.link-1",
         "link": "https://github.com/lunarW1TCH/lunarify-react"
       }
     ],
@@ -85,7 +78,7 @@
   {
     "id": "lunarify-react-native",
     "title": "Lunarify - React Native",
-    "shortDescription": "This is a React Native version of my Lunarify web app for Android and iOS.",
+    "shortDescription": "lunarify-react-native.short-desc",
     "technologies": [
       "TypeScript",
       "React Native",
@@ -98,40 +91,38 @@
     "image": "/img/lunarify-react-native.jpg",
     "links": [
       {
-        "name": "Github",
+        "name": "lunarify-react-native.link-1",
         "link": "https://github.com/lunarW1TCH/lunarify-react-native"
       }
     ],
     "description": [
-      "Once I heard about React Native I knew I had to learn it. Creating both web and mobile apps using almost the same code base sounded amazing.",
-      "And so I did, this is the only app I created with React Native so far, and I did not publish it due to Spotify's rigoristic rules for extending quota usage of their API.",
-      "I hope I'll have opportunities to work with this technology professionally."
+      "lunarify-react-native.desc-1",
+      "lunarify-react-native.desc-2",
+      "lunarify-react-native.desc-3"
     ]
   },
   {
     "id": "lunarstars",
     "title": "Lunarstars",
-    "shortDescription": "This is a simple website which generates random pixel art images of stars and planets which you can use for your TTRPG campaign or anything else you want.",
+    "shortDescription": "lunarstars.short-desc",
     "technologies": ["TypeScript", "React", "SCSS", "i18next"],
     "image": "/img/lunarstars.png",
     "links": [
       {
-        "name": "Github",
+        "name": "lunarstars.link-1",
         "link": "https://github.com/lunarW1TCH/lunarpics"
       },
       {
-        "name": "App",
+        "name": "lunarstars.link-2",
         "link": "https://lunarstars.netlify.app/"
       }
     ],
-    "description": [
-      "This is the first app I created with React. I was really excited to show it off. Unfortunately a couple of days after finishing it, the API I used for generating pictures went down."
-    ]
+    "description": ["lunarstars.desc-1"]
   },
   {
     "id": "minos",
     "title": "WIP: Minos",
-    "shortDescription": "ANV Production's project in which I am responsible for coding for Arduino and Raspberry Pi devices using C++ and Python. We are developing hardware and software for an IRL game based on Twine.",
+    "shortDescription": "minos.short-desc",
     "technologies": [
       "Arduino",
       "Arduino IDE",
@@ -147,28 +138,25 @@
   {
     "id": "amo",
     "title": "AMO",
-    "shortDescription": "An Unreal Engine 5 project I worked on as a developer while working at Nyx VX.",
+    "shortDescription": "amo.short-desc",
     "technologies": ["Unreal Engine 5"],
     "image": "/img/amo.png",
     "links": [
       {
-        "name": "Steam Page",
+        "name": "amo.link-1",
         "link": "https://store.steampowered.com/app/2230720/A_Mountain_of_One/"
       },
       {
-        "name": "NYX VX",
+        "name": "amo.link-2",
         "link": "https://www.linkedin.com/company/nyxvx/"
       }
     ],
-    "description": [
-      "Working on this project was amazing. I never actually thought I would like game development but this opportunity at Nyx changed my mind.",
-      "I learned tons of useful skills while creating this app, optimization techniques among them."
-    ]
+    "description": ["amo.desc-1", "amo.desc-2"]
   },
   {
     "id": "timefinder",
     "title": "WIP: Time Finder",
-    "shortDescription": "DiscordJS bot which allows you to create polls to choose the best time for you and your discord server friends. React frontend, NodeJS backend, MongoDB and DiscordJS.",
+    "shortDescription": "timefinder.short-desc",
     "technologies": [
       "TypeScript",
       "NodeJS",
@@ -185,16 +173,16 @@
   {
     "id": "lunarroller",
     "title": "Lunarroller",
-    "shortDescription": "This is the first website I ever made. It is written in Html, CSS and Javascript only.",
+    "shortDescription": "lunarroller.short-desc",
     "technologies": ["HTML", "CSS", "Vanilla JS"],
     "image": "/img/lunarroller.png",
     "links": [
       {
-        "name": "Github",
+        "name": "lunarroller.link-1",
         "link": "https://github.com/lunarW1TCH/DiceRoller_Dev"
       },
       {
-        "name": "App",
+        "name": "lunarroller.link-2",
         "link": "https://lunarroller.netlify.app/"
       }
     ],

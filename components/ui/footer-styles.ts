@@ -1,18 +1,11 @@
 import { sva } from '@/styled-system/css';
 
 const styles = sva({
-  slots: ['rootContainer', 'mainContainer', 'footer'],
+  slots: ['footer', 'langSelect', 'detailsContainer'],
   base: {
-    rootContainer: {
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      color: 'white',
-    },
-    mainContainer: { width: '100%' },
     footer: {
+      display: 'flex',
+      justifyContent: 'space-evenly',
       backgroundColor: 'white',
       width: '100%',
       textAlign: 'center',
@@ -26,6 +19,14 @@ const styles = sva({
         textDecoration: 'underline',
       },
     },
+    langSelect: {
+      marginLeft: 'xl',
+      padding: 'xxs',
+      borderRadius: 's',
+      border: 'accent',
+      color: 'primary.900',
+    },
+    detailsContainer: {},
   },
 });
 

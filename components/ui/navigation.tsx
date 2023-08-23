@@ -2,10 +2,15 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Props from '@/interfaces/props';
+import { useTranslation } from '@/app/i18n/client';
+import { FaHome } from 'react-icons/fa';
 
 import styles from './navigation-styles';
 
-const Navigation = () => {
+const Navigation = (props: Props) => {
+  const { lng } = props;
+  const { t } = useTranslation(lng, 'ui');
   const classes = styles();
   const pathname = usePathname();
 
@@ -14,35 +19,35 @@ const Navigation = () => {
       <ul className={classes.navList}>
         <Link
           className={`${classes.link} ${
-            pathname === '/' ? classes.active : ''
+            pathname === `/${lng}` ? classes.active : ''
           }`}
-          href='/'
+          href={`/${lng}`}
         >
-          Home
+          <FaHome />
         </Link>
         <Link
           className={`${classes.link} ${
-            pathname === '/projects' ? classes.active : ''
+            pathname === `/${lng}/projects` ? classes.active : ''
           }`}
-          href='/projects'
+          href={`/${lng}/projects`}
         >
-          Projects
+          {t('nav.projects')}
         </Link>
         <Link
           className={`${classes.link} ${
-            pathname === '/skills' ? classes.active : ''
+            pathname === `/${lng}/skills` ? classes.active : ''
           }`}
-          href='/skills'
+          href={`/${lng}/skills`}
         >
-          Skills
+          {t('nav.skills')}
         </Link>
         <Link
           className={`${classes.link} ${
-            pathname === '/contact' ? classes.active : ''
+            pathname === `/${lng}/contact` ? classes.active : ''
           }`}
-          href='/contact'
+          href={`/${lng}/contact`}
         >
-          Contact
+          {t('nav.contact')}
         </Link>
       </ul>
     </nav>

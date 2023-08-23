@@ -1,127 +1,127 @@
 [
   {
     "title": "JavaScript",
-    "category": "Language",
+    "category": "language",
     "description": ""
   },
   {
     "title": "TypeScript",
-    "category": "Language",
+    "category": "language",
     "description": ""
   },
   {
     "title": "React",
-    "category": "Library/Framework",
-    "description": "Redux Toolkit, Styled Components"
+    "category": "library",
+    "description": "react"
   },
   {
     "title": "Next.js",
-    "category": "Library/Framework",
-    "description": "Pages Router and App Router"
+    "category": "library",
+    "description": "next"
   },
   {
     "title": "Vue",
-    "category": "Library/Framework",
-    "description": "Composition API, Options API, Vuex/Pinia"
+    "category": "library",
+    "description": "vue"
   },
   {
     "title": "React Native",
-    "category": "Library/Framework",
+    "category": "library",
     "description": ""
   },
   {
     "title": "Visual Studio Code",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Node JS",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Express JS",
-    "category": "Library/Framework",
+    "category": "library",
     "description": ""
   },
   {
     "title": "MongoDB",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Mongoose",
-    "category": "Library/Framework",
+    "category": "library",
     "description": ""
   },
   {
     "title": "Python",
-    "category": "Language",
+    "category": "language",
     "description": ""
   },
   {
     "title": "C++",
-    "category": "Language",
-    "description": "Arduino C++ subset"
+    "category": "language",
+    "description": "cpp"
   },
   {
     "title": "Flask",
-    "category": "Library/Framework",
+    "category": "library",
     "description": ""
   },
   {
     "title": "Arduino IDE",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Arduino",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Raspberry Pi",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Linux",
-    "category": "Tool/Other",
-    "description": "I use Manjaro as my main operating system."
+    "category": "tool",
+    "description": "linux"
   },
   {
     "title": "Visual Basic for Applications",
-    "category": "Language",
+    "category": "language",
     "description": ""
   },
   {
     "title": "MS Office",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Postman",
-    "category": "Tool/Other",
-    "description": "For testing during API development."
+    "category": "tool",
+    "description": "postman"
   },
   {
     "title": "Docker",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "Unreal Engine 5",
-    "category": "Tool/Other",
+    "category": "tool",
     "description": ""
   },
   {
     "title": "HTML",
-    "category": "Language",
+    "category": "language",
     "description": ""
   },
   {
     "title": "CSS",
-    "category": "Language",
-    "description": "Including CSS preprocessors like SCSS and CSS-in-JS using Emotion or Panda-CSS"
+    "category": "language",
+    "description": "css"
   }
 ]

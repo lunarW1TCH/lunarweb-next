@@ -8,7 +8,7 @@ const styles = sva({
     'submitButton',
     'errorText',
     'spinner',
-    'thankYouText'
+    'thankYouText',
   ],
   base: {
     formContainer: {
@@ -20,6 +20,7 @@ const styles = sva({
       backgroundColor: 'white',
       color: 'primary.900',
       boxShadow: 'solid',
+      marginBottom: 'xl',
       mDown: {
         width: '100%',
       },
