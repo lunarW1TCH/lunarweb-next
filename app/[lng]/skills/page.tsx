@@ -19,7 +19,12 @@ const SkillsPage = async (props: PageProps) => {
   const classes = styles();
 
   return (
-    <VStack marginY='m'>
+    <VStack
+      marginY='m'
+      maxWidth='60%'
+      lDown={{ maxWidth: '100%' }}
+      justifyContent='center'
+    >
       <Card margin='m' width='95%'>
         <CardContent
           paddingTop='l'

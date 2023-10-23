@@ -11,7 +11,13 @@ const styles = sva({
       alignItems: 'center',
       color: 'white',
     },
-    mainContainer: { width: '100%' },
+    mainContainer: {
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
   },
 });
 
