@@ -1,0 +1,16 @@
+{
+  "category": {
+    "language": "Język",
+    "library": "Biblioteka",
+    "tool": "Narzędzie/Inne"
+  },
+  "description": {
+    "react": "Redux Toolkit",
+    "next": "Pages Router i App Router",
+    "vue": "Composition API, Options API, Vuex/Pinia",
+    "cpp": "Arduino C++ subset",
+    "linux": "Używam Manjaro jako mój główny system operacyjny",
+    "postman": "Do testowania API podczas tworzenia",
+    "css": "Włącznie z preprocesorami CSS takimi jak SCSS i bibliotekami CSS-in-JS jak Emotion czy Panda-CSS"
+  }
+}

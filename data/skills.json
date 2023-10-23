@@ -1,0 +1,127 @@
+[
+  {
+    "title": "JavaScript",
+    "category": "language",
+    "description": ""
+  },
+  {
+    "title": "TypeScript",
+    "category": "language",
+    "description": ""
+  },
+  {
+    "title": "React",
+    "category": "library",
+    "description": "react"
+  },
+  {
+    "title": "Next.js",
+    "category": "library",
+    "description": "next"
+  },
+  {
+    "title": "Vue",
+    "category": "library",
+    "description": "vue"
+  },
+  {
+    "title": "React Native",
+    "category": "library",
+    "description": ""
+  },
+  {
+    "title": "Visual Studio Code",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Node JS",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Express JS",
+    "category": "library",
+    "description": ""
+  },
+  {
+    "title": "MongoDB",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Mongoose",
+    "category": "library",
+    "description": ""
+  },
+  {
+    "title": "Python",
+    "category": "language",
+    "description": ""
+  },
+  {
+    "title": "C++",
+    "category": "language",
+    "description": "cpp"
+  },
+  {
+    "title": "Flask",
+    "category": "library",
+    "description": ""
+  },
+  {
+    "title": "Arduino IDE",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Arduino",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Raspberry Pi",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Linux",
+    "category": "tool",
+    "description": "linux"
+  },
+  {
+    "title": "Visual Basic for Applications",
+    "category": "language",
+    "description": ""
+  },
+  {
+    "title": "MS Office",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Postman",
+    "category": "tool",
+    "description": "postman"
+  },
+  {
+    "title": "Docker",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "Unreal Engine 5",
+    "category": "tool",
+    "description": ""
+  },
+  {
+    "title": "HTML",
+    "category": "language",
+    "description": ""
+  },
+  {
+    "title": "CSS",
+    "category": "language",
+    "description": "css"
+  }
+]

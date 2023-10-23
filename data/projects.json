@@ -1,0 +1,191 @@
+[
+  {
+    "id": "lunarweb",
+    "title": "Lunarweb",
+    "shortDescription": "lunarweb.short-desc",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Panda CSS - CSS-in-JS library",
+      "NodeJS"
+    ],
+    "image": "/img/gala.jpg",
+    "links": [
+      {
+        "name": "lunarweb.link-1",
+        "link": "https://github.com/lunarW1TCH/lunarweb-next"
+      },
+      {
+        "name": "lunarweb.link-2",
+        "link": "https://github.com/lunarW1TCH/lunarweb-front"
+      },
+      {
+        "name": "lunarweb.link-3",
+        "link": "https://github.com/lunarW1TCH/lunarweb-node"
+      }
+    ],
+    "description": ["lunarweb.desc-1", "lunarweb.desc-2", "lunarweb.desc-3"]
+  },
+  {
+    "id": "lunarbingo",
+    "title": "WIP: Lunar Bingo",
+    "shortDescription": "lunarbingo.short-desc",
+    "technologies": [
+      "TypeScript",
+      "Vue",
+      "SCSS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "image": "/img/bingo.png",
+    "links": [
+      {
+        "name": "lunarbingo.link-1",
+        "link": "https://github.com/lunarW1TCH/bingo-vue"
+      },
+      {
+        "name": "lunarbingo.link-2",
+        "link": "https://github.com/lunarW1TCH/bingo-node"
+      }
+    ],
+    "description": ["lunarbingo.desc-1", "lunarbingo.desc-2"]
+  },
+  {
+    "id": "lunarify-react",
+    "title": "Lunarify - React",
+    "shortDescription": "lunarify-react.short-desc",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Redux Toolkit",
+      "i18next",
+      "REST API",
+      "OAUTH2",
+      "SPOTIFY API"
+    ],
+    "image": "/img/lunarify-react.png",
+    "links": [
+      {
+        "name": "lunarify-react.link-1",
+        "link": "https://github.com/lunarW1TCH/lunarify-react"
+      }
+    ],
+    "description": []
+  },
+  {
+    "id": "lunarify-react-native",
+    "title": "Lunarify - React Native",
+    "shortDescription": "lunarify-react-native.short-desc",
+    "technologies": [
+      "TypeScript",
+      "React Native",
+      "Redux Toolkit",
+      "i18next",
+      "REST API",
+      "OAUTH2",
+      "SPOTIFY API"
+    ],
+    "image": "/img/lunarify-react-native.jpg",
+    "links": [
+      {
+        "name": "lunarify-react-native.link-1",
+        "link": "https://github.com/lunarW1TCH/lunarify-react-native"
+      }
+    ],
+    "description": [
+      "lunarify-react-native.desc-1",
+      "lunarify-react-native.desc-2",
+      "lunarify-react-native.desc-3"
+    ]
+  },
+  {
+    "id": "lunarstars",
+    "title": "Lunarstars",
+    "shortDescription": "lunarstars.short-desc",
+    "technologies": ["TypeScript", "React", "SCSS", "i18next"],
+    "image": "/img/lunarstars.png",
+    "links": [
+      {
+        "name": "lunarstars.link-1",
+        "link": "https://github.com/lunarW1TCH/lunarpics"
+      },
+      {
+        "name": "lunarstars.link-2",
+        "link": "https://lunarstars.netlify.app/"
+      }
+    ],
+    "description": ["lunarstars.desc-1"]
+  },
+  {
+    "id": "minos",
+    "title": "WIP: Minos",
+    "shortDescription": "minos.short-desc",
+    "technologies": [
+      "Arduino",
+      "Arduino IDE",
+      "Raspberry Pi",
+      "C++",
+      "Python",
+      "Selenium"
+    ],
+    "image": "/img/minos.png",
+    "links": [],
+    "description": []
+  },
+  {
+    "id": "amo",
+    "title": "AMO",
+    "shortDescription": "amo.short-desc",
+    "technologies": ["Unreal Engine 5"],
+    "image": "/img/amo.png",
+    "links": [
+      {
+        "name": "amo.link-1",
+        "link": "https://store.steampowered.com/app/2230720/A_Mountain_of_One/"
+      },
+      {
+        "name": "amo.link-2",
+        "link": "https://www.linkedin.com/company/nyxvx/"
+      }
+    ],
+    "description": ["amo.desc-1", "amo.desc-2"]
+  },
+  {
+    "id": "timefinder",
+    "title": "WIP: Time Finder",
+    "shortDescription": "timefinder.short-desc",
+    "technologies": [
+      "TypeScript",
+      "NodeJS",
+      "React",
+      "MongoDB",
+      "Mongoose",
+      "DiscordJS",
+      "REST API"
+    ],
+    "image": "/img/timefinder.png",
+    "links": [],
+    "description": []
+  },
+  {
+    "id": "lunarroller",
+    "title": "Lunarroller",
+    "shortDescription": "lunarroller.short-desc",
+    "technologies": ["HTML", "CSS", "Vanilla JS"],
+    "image": "/img/lunarroller.png",
+    "links": [
+      {
+        "name": "lunarroller.link-1",
+        "link": "https://github.com/lunarW1TCH/DiceRoller_Dev"
+      },
+      {
+        "name": "lunarroller.link-2",
+        "link": "https://lunarroller.netlify.app/"
+      }
+    ],
+    "description": []
+  }
+]

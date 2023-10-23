@@ -1,0 +1,53 @@
+{
+  "lunarweb": {
+    "short-desc": "Właśnie tutaj jesteś! Moja strona portfolio stworzona z użyciem Next.js",
+    "link-1": "Projekt na Githubie",
+    "link-2": "Stary projekt frontendowy",
+    "link-3": "Stary projekt backendowy",
+    "desc-1": "Stworzyłem pierwszą wersję tej strony używając Reacta i Express.js-a. Nie byłem jednak zadowolony z konieczności osobnego hsotowania backendu do tej strony tylko po to by wysłać sobie maile poprzez formularz kontaktowy.",
+    "desc-2": "Dlatego przepisałem tę stronę używając Next.js-a. Teraz hostuje ją w jednym miejscu i mam bezpośredni dostęp do backendu poprzez Api Routes Next.js-a.",
+    "desc-3": "Kolejne częściowe przepisanie strony. Tym razem zmieniłem pages router na app router w Next.js oraz zmieniłem bibliotekę CSS-in-JS z Emotion na Panda-CSS. Dodałem też polską wersję językową z użyciem i18n."
+  },
+  "lunarbingo": {
+    "short-desc": "Fullstackowa apka napisana w TypeScripcie. Użytkownicy mogą tworzyć własne bingo, dzielić się nimi z innymi i grać razem. Aplikacja jest prawie gotowa, muszę tylko jeszcze trochę popracować nad CSSem zanim ją opublikuję.",
+    "link-1": "Github projekt frontendowy",
+    "link-2": "Github projekt backendowy",
+    "desc-1": "Moja przyjaciółka Oanh pomaga mi obecnie w stylowaniu strony.",
+    "desc-2": "Bardzo dobrze bawiłem się ucząć się Vue i tworząc tę stronę. Zdecydowanie przyjemnie było używać innej technologii od Reacta."
+  },
+  "lunarify-react": {
+    "short-desc": "Apka Reactowa, która wykorzystuje publiczne API Spotify do wyświetlania najczęściej słuchanych piosenek i artystów przez użytkownika.",
+    "link-1": "Github"
+  },
+  "lunarify-react-native": {
+    "short-desc": "React Native'owa wersja mojej apki Lunarify, na Androida i iOSa.",
+    "link-1": "Github",
+    "desc-1": "Gdy usłyszałem o React Native'ie wiedziałem że muszę się go nauczyć. Tworzenie apek webowych i mobilnych używając praktycznie tego samego kodu brzmiało świetnie.",
+    "desc-2": "I to właśnie zrobiłem. Jak na razie to jest jedyna aplikacja którą stworzyłem używając React Native'a. Nie opublikowałem jej, przez skomplikowane wymogi Spotify do rozszerzenia użytku API dla publicznych aplikacji.",
+    "desc-3": "Mam nadzieję, żę będę mieć okazję pracować profesjonalnie z tą technologią."
+  },
+  "lunarstars": {
+    "short-desc": "Prosta strona która generuje losowe obrazki pixel-artowe planet i gwiazd.",
+    "link-1": "Github",
+    "link-2": "Aplikacja",
+    "desc-1": "To pierwsza aplikacja jaką napisałem używając Reacta. Niestety kilka dni po jej ukończeniu API, którego użyłem do generowania obrazków, przestało działać."
+  },
+  "minos": {
+    "short-desc": "Projekt ANV Production w którym jestem odpowiedzialny za programowanie urządzeń Arduino i Raspberry Pi używając C++ i Pythona. Tworzymy hardware i software dla naszego klienta do interaktywnej gry."
+  },
+  "amo": {
+    "short-desc": "Projekt UE5 nad którym pracowałem jako deweloper podczas mojej pracy w Nyx VX.",
+    "link-1": "Strona Steama",
+    "link-2": "NYX VX",
+    "desc-1": "Świetnie się bawiłem pracując na tym projekcie. Nigdy nie sądziłem że będę lubił game development, ale ta okazja w Nyx VX zmieniła moje zdanie.",
+    "desc-2": "Nauczyłem się wielu przydatnych umiejętności podczas pracy w Nyxie, m.in. technik optymalizacji gier."
+  },
+  "timefinder": {
+    "short-desc": "Bot używający biblioteki DiscordJS, pozwala na tworzenie głosowań do wybrania czasu jakiegoś eventu, który pasuje wszystkim twoim znajomym na serwerze Discordowym."
+  },
+  "lunarroller": {
+    "short-desc": "To pierwsza strona jaką kiedykolwiek stworzyłem. Jest dosyć prosta, wykorzystuje w niej tylko HTMLa, CSSa i Vanilla JS.",
+    "link-1": "Github",
+    "link-2": "Aplikacja"
+  }
+}
