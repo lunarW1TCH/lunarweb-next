@@ -49,7 +49,7 @@ const ProjectItem = async (props: ProjectItemProps) => {
     <Card className={classes.projectContainer}>
       <CardHeader>
         <CardTitle>
-          <Link href={`${lng}/projects/${id}`}>
+          <Link href={`/projects/${id}`}>
             <h2 className={classes.projectTitle}>{title}</h2>
           </Link>
         </CardTitle>
