@@ -6,7 +6,8 @@ const styles = sva({
     projectsContainer: {
       height: '100%',
       width: '100%',
-      marginTop: 'xl',
+      marginY: 'xl',
+      paddingBottom: 'xxl',
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',

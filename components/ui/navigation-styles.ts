@@ -29,7 +29,7 @@ const styles = sva({
       },
     },
     link: {
-      width: '100%',
+      // width: '100%',
       fontSize: 's',
     },
     mobileNav: {
